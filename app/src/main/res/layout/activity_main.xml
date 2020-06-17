@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="0dp"
+        android:contentDescription="@string/todo"
+        android:scaleType="centerCrop"
+        app:srcCompat="@mipmap/bg" />
+
+    <EditText
+        android:id="@+id/input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginBottom="790dp"
+        android:autofillHints=""
+        android:gravity="end"
+        android:hint="@string/input_hint"
+        android:inputType="number|numberDecimal"
+        android:textSize="50sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginBottom="450dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_clear"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="0dp"
+            android:onClick="onClick"
+            android:text="@string/btn_clear_label"
+            android:textSize="26sp" />
+
+        <Button
+            android:id="@+id/btn_delete"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="250dp"
+            android:layout_marginLeft="250dp"
+            android:onClick="onClick"
+            android:text="@string/btn_delete_label"
+            android:textSize="26sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginBottom="350dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_1"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:onClick="onClick"
+            android:text="@string/btn_1_label"
+            android:textSize="26sp" />
+
+        <Button
+            android:id="@+id/btn_2"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:onClick="onClick"
+            android:text="@string/btn_2_label"
+            android:textSize="26sp" />
+
+        <Button
+            android:id="@+id/btn_3"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:onClick="onClick"
+            android:text="@string/btn_3_label"
+            android:textSize="26sp" />
+
+        <Button
+            android:id="@+id/btn_plus"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:onClick="onClick"
+            android:text="@string/btn_plus_label"
+            android:textSize="26sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginBottom="250dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_4"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:onClick="onClick"
+            android:text="@string/btn_4_label"
+            android:textSize="26sp" />
+
+        <Button
+            android:id="@+id/btn_5"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:onClick="onClick"
+            android:text="@string/btn_5_label"
+            android:textSize="26sp" />
+
+        <Button
+            android:id="@+id/btn_6"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:onClick="onClick"
+            android:text="@string/btn_6_label"
+            android:textSize="26sp" />
+
+        <Button
+            android:id="@+id/btn_minus"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:onClick="onClick"
+            android:text="@string/btn_minus_label"
+            android:textSize="26sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="150dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_7"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:onClick="onClick"
+            android:text="@string/btn_7_label"
+            android:textSize="26sp" />
+
+        <Button
+            android:id="@+id/btn_8"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:onClick="onClick"
+            android:text="@string/btn_8_label"
+            android:textSize="26sp" />
+
+        <Button
+            android:id="@+id/btn_9"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:onClick="onClick"
+            android:text="@string/btn_9_label"
+            android:textSize="26sp" />
+
+        <Button
+            android:id="@+id/btn_mul"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:onClick="onClick"
+            android:text="@string/btn_mul_label"
+            android:textSize="26sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_dot"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:onClick="onClick"
+            android:text="@string/btn_dot_label"
+            android:textSize="26sp" />
+
+        <Button
+            android:id="@+id/btn_0"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:onClick="onClick"
+            android:text="@string/btn_0_label"
+            android:textSize="26sp" />
+
+        <Button
+            android:id="@+id/btn_equal"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:onClick="onClick"
+            android:text="@string/btn_equal_label"
+            android:textSize="26sp" />
+
+        <Button
+            android:id="@+id/btn_div"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:onClick="onClick"
+            android:text="@string/btn_div_label"
+            android:textSize="26sp" />
+    </LinearLayout>
+
+</RelativeLayout>
